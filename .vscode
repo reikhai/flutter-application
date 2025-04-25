@@ -1,0 +1,18 @@
+{
+  "dart.flutterSdkPath": "/Users/reikhai.ng/Desktop/flutter",
+  "editor.formatOnSave": true,
+  "[dart]": {
+    "editor.formatOnSave": true
+  },
+  "dart.flutterHotReloadOnSave": "all",
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true,
+    "source.organizeImports": true
+  },
+  "dart.lineLength": 100,
+  "editor.wordWrap": "on",
+  "editor.formatOnPaste": false,
+  "editor.formatOnType": false,
+  "workbench.colorTheme": "Dracula Theme",
+  "workbench.iconTheme": "material-icon-theme"
+}
