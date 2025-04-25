@@ -1,5 +1,5 @@
 import 'package:flutter/cupertino.dart';
-import 'story_slider.dart';
+import 'home_page/index.dart';
 /// Flutter code sample for [CupertinoTabBar].
 
 class BottomNav extends StatelessWidget {
@@ -78,7 +78,7 @@ class _CupertinoTabBarExampleState extends State<CupertinoTabBarExample> {
       tabBuilder: (BuildContext context, int index) {
         return CupertinoTabView(
           builder: (BuildContext context) {
-            return StorySlider(); // Replace with your desired widget for each tab
+            return HomePage(); // Replace with your desired widget for each tab
           },
         );
       },

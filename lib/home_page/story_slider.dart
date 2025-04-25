@@ -10,18 +10,20 @@ class StorySlider extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            SingleChildScrollView(
-              scrollDirection: Axis.horizontal,
-              padding: const EdgeInsets.symmetric(horizontal: 10), // 👈 左右内边距
-
-              child: Row(
-                children: List.generate(
-                  10,
-                  (index) => Padding(
-                    padding: const EdgeInsets.only(right: 10), // 👈 每个图标右边间距
+            SizedBox(
+              height: 100,
+              child: ListView.builder(
+                scrollDirection: Axis.horizontal,
+                itemCount: 1000, // Total items to be displayed
+                padding: const EdgeInsets.symmetric(horizontal: 10),
+                itemBuilder: (context, index) {
+                  return Padding(
+                    padding: const EdgeInsets.only(
+                      right: 10,
+                    ), // Spacing between icons
                     child: StoryIcon(index: index),
-                  ),
-                ),
+                  );
+                },
               ),
             ),
           ],
@@ -48,6 +50,7 @@ class CreateStoryIcon extends State<StoryIcon> {
       _viewed = !_viewed;
     });
   }
+
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
@@ -82,7 +85,7 @@ class CreateStoryIcon extends State<StoryIcon> {
               ),
               child: ClipOval(
                 child: Image.network(
-                  'https://i.pravatar.cc/100?img=${widget.index}',
+                  'https://i.pravatar.cc/100?img=1',
                   width: 60,
                   height: 60,
                   fit: BoxFit.cover,
