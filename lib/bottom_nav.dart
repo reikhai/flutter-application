@@ -1,5 +1,5 @@
 import 'package:flutter/cupertino.dart';
-import 'storySlider.dart';
+import 'story_slider.dart';
 /// Flutter code sample for [CupertinoTabBar].
 
 class BottomNav extends StatelessWidget {

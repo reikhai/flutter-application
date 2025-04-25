@@ -1,6 +1,6 @@
 // main.dart
 import 'package:flutter/cupertino.dart';
-import 'bottomNav.dart';
+import 'bottom_nav.dart';
 import 'header.dart';
 
 void main() {
